@@ -1,0 +1,11 @@
+set_io clk         91      #PMOD10
+set_io rm_tx_en    78      #PMOD1
+set_io rm_tx_data0 87      #PMOD7
+set_io rm_tx_data1 79      #PMOD2
+
+set_io ch0 80              #PMOD3
+set_io ch1 90              #PMOD9
+set_io ch2 81              #PMOD4
+set_io trg_led 95          #Green LED
+
+

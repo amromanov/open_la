@@ -1,0 +1,8 @@
+read_verilog ./ws_logger_ice40.v
+read_verilog ../cores/rmii_send_byte_v2.v
+read_verilog ../cores/udp_send.v
+read_verilog ../cores/ws_log_ch.v
+read_verilog ../cores/ws_log_max.v
+read_verilog ../cores/crc32.v
+read_verilog ../cores/ws_trigger_ch.v
+synth_ice40 -blif project.blif -abc2

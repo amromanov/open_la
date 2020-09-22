@@ -1,0 +1,36 @@
+#*********Logical analyzer for long-term jitter monitoring*************
+#
+#   Digilent Nexys 4 DDR pin mapping
+#
+# MIREA - Russian Technological University, 2020
+# Author: Alexey M. Romanov
+# 
+# Distributed under the Creative Commons Attribution-ShareAlike license
+#**********************************************************************
+
+#Clock
+NET "clk" TNM_NET = "clk";
+TIMESPEC "TS_CLK" = PERIOD "clk" 10.0 ns HIGH 50%;
+NET "clk"       LOC = "E3" ; 
+
+#Led
+NET "trg_led"   LOC = "H17"; 
+
+#FPGA-PHY RMII
+NET "rm_clk"        LOC = "D5" ;
+NET "rm_tx[0]"      LOC = "A10";
+NET "rm_tx[1]"      LOC = "A8" ;
+NET "rm_tx_en"      LOC = "B9" ;
+NET "phy_rst"       LOC = "B3" ;
+
+NET "mode[0]"      LOC = "C11";
+NET "mode[1]"      LOC = "D10";
+NET "mode[2]"      LOC = "D9";
+
+
+#Input channels
+NET "ch0" LOC = "H4";   #JD1                 
+NET "ch1" LOC = "K1";   #JC1
+NET "ch2" LOC = "F6";   #JC2
+NET "ch3" LOC = "J2";   #JC3
+NET "ch4" LOC = "G6";   #JC4
