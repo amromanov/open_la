@@ -58,7 +58,7 @@ wire [15:0]jtr2;
 wire [15:0]jtr3;
 wire [15:0]jtr4;
 
-wire rdy1, rdy2, rdy3, rdy3;
+wire rdy1, rdy2, rdy3, rdy4;
 
 //Measurment counter
 reg [31:0]pcnt;
