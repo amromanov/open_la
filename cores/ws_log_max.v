@@ -68,7 +68,7 @@ always @(posedge clk, posedge rst)
                 2: begin
                         if(mx[Nm]!=dm[Nm+1])            //if sign changes then |mx|<|d|
                             mx <= d;
-                        if(!((&d[Nm:Nm-Nl])|(&(~d[Nm:Nm-Nl]))))      //If jitter is higher then (2^(Nm-Nl+1)-1) send frame on each edge
+                        if(!((&d[Nm:Nm-Nl])|(&(~d[Nm:Nm-Nl]))))      //If jitter is higher then (2^(Nm-Nl)-1) send frame on each edge
                             send_all <= 1;                           //till the next time prescaler go to zero
                         state <= 3; 
                    end
