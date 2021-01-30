@@ -18,7 +18,7 @@ module ws_logger(
     input ch4,          //Slave device 4
     output reg rm_clk,  //RMII Clock
     output [1:0]rm_tx,  //RMII Tx
-    output rm_tx_en,    //RMII Tx enable;
+    output rm_tx_en,    //RMII Tx enable
     inout  [2:0]mode,   //Mode/RMII pins to turn on auto-negotiation
     output reg phy_rst, //PHY reset
     output reg trg_led  //Led, which toggles every time UDP frame is transmitted

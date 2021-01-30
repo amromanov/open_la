@@ -1,0 +1,86 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2017  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel MegaCore Function License Agreement, or other 
+# applicable license agreement, including, without limitation, 
+# that your use is for the sole purpose of programming logic 
+# devices manufactured by Intel and sold by Intel or its 
+# authorized distributors.  Please refer to the applicable 
+# agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+# Date created = 12:30:01  сентября 23, 2020
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		top_de0_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE22F17C6
+set_global_assignment -name TOP_LEVEL_ENTITY ws_logger_de0
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 17.0.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "12:30:01  сентября 23, 2020"
+set_global_assignment -name LAST_QUARTUS_VERSION "17.0.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name EDA_DESIGN_ENTRY_SYNTHESIS_TOOL "Precision Synthesis"
+set_global_assignment -name EDA_LMF_FILE mentor.lmf -section_id eda_design_synthesis
+set_global_assignment -name EDA_INPUT_DATA_FORMAT VQM -section_id eda_design_synthesis
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_R14 -to rm_clk
+set_location_assignment PIN_A5 -to rm_tx_en
+set_location_assignment PIN_A6 -to rm_tx[0]
+set_location_assignment PIN_B6 -to rm_tx[1]
+set_location_assignment PIN_A15 -to trg_led
+set_location_assignment PIN_R8 -to clkin
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to trg_led
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to rm_tx[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to rm_tx_en
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to rm_tx[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ch0
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ch1
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ch2
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ch3
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ch4
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ch5
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to rm_clk
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to clkin
+set_global_assignment -name VERILOG_FILE alt_pll.v
+set_global_assignment -name VERILOG_FILE ../cores/ws_trigger_ch.v
+set_global_assignment -name VERILOG_FILE ../cores/ws_log_max.v
+set_global_assignment -name VERILOG_FILE ../cores/ws_log_ch.v
+set_global_assignment -name VERILOG_FILE ../cores/udp_send.v
+set_global_assignment -name VERILOG_FILE ../cores/rmii_send_byte_v2.v
+set_global_assignment -name VERILOG_FILE ../cores/rmii_send_byte.v
+set_global_assignment -name VERILOG_FILE ../cores/crc32.v
+set_global_assignment -name VERILOG_FILE ws_logger_de0.v
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

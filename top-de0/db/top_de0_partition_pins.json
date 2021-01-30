@@ -1,0 +1,93 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "rm_clk",
+					"strict" : false
+				},
+				{
+					"name" : "rm_tx[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rm_tx[1]",
+					"strict" : false
+				},
+				{
+					"name" : "rm_tx_en",
+					"strict" : false
+				},
+				{
+					"name" : "trg_led",
+					"strict" : false
+				},
+				{
+					"name" : "ch[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ch[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ch[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ch[14]",
+					"strict" : false
+				},
+				{
+					"name" : "ch[13]",
+					"strict" : false
+				},
+				{
+					"name" : "ch[15]",
+					"strict" : false
+				},
+				{
+					"name" : "ch[9]",
+					"strict" : false
+				},
+				{
+					"name" : "ch[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ch[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ch[11]",
+					"strict" : false
+				},
+				{
+					"name" : "ch[10]",
+					"strict" : false
+				},
+				{
+					"name" : "ch[8]",
+					"strict" : false
+				},
+				{
+					"name" : "ch[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ch[12]",
+					"strict" : false
+				},
+				{
+					"name" : "ch[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ch[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
